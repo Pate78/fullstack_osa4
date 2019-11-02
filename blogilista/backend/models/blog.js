@@ -3,7 +3,10 @@ mongoose.set('useFindAndModify', false)
 
 const blogSchema = mongoose.Schema({
   title: String,
-  author: String,
+  author: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  },
   url: String,
   likes: Number
 })
@@ -16,4 +19,4 @@ blogSchema.set('toJSON', {
   }
 })
 
-module.exports = mongoose.model('Note', blogSchema)
+module.exports = mongoose.model('Blog', blogSchema)

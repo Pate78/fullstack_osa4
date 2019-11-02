@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
   "title": "Testi",
-  "author": "Teppo Testaaja",
   "url": "http://testiurl.com",
-  "likes": "2"
+  "likes": "2",
+  "author": "5dbd4460e7d4173968dd7149"
 }
